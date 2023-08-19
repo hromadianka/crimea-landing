@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+}
+
+p {
+    color: #000;
+    font-family: Didact Gothic;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.red-button {
+    color: white;
+    background: #C90000;
+    border: 1px solid #C90000;
+}
+
+.white-button {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+@media (min-width: 1000px) {
+
+    p {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .section1-div1 {
+        background: url(img/bg1.png) no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        background-attachment: fixed;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+     }
+
+    .section1-div1 > p {
+        padding: 13px 10px;
+        background: white;
+        text-align: center;
+        width: 40%;
+        height: fit-content;
+        margin-top: 24%;
+    }
+
+    .section1-div2 {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 12px;
+        background: url(img/bg2.png) no-repeat;
+        background-size: 102% 101%;
+        background-position: center;
+    }
+
+    .section1-div2 button {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .section2 {
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .section2-div1 {
+        padding: 50px 100px;
+        background: url(img/bg4.png);
+        background-size: 45% 100%;
+    }
+
+    .section2-div2 {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;
+        padding-bottom: 5%;
+        justify-content: flex-end;
+        background: url(img/bg3.png) no-repeat;
+        background-size: cover;
+        padding: 40px 30px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2 > div, .section1-div2 {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .section1 {
+        height: 100vh;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .section1-div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 20px;
+        height: 20%;
+    }
+
+    .section1-div1 {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 200px;
+        box-sizing: border-box;
+    }
+
+    .section1-div2, .section2-div2 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+    .section1-div1 {
+        background: url(img/bg1-mobile.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background-attachment: fixed;
+        height: 80%;
+    }
+
+    .section1 p {
+        background: white;
+        width: 60%;
+        padding: 30px 20px;
+        font-size: 60px;
+        box-sizing: border-box;
+    }
+
+    .mobile {
+        margin: 80px 0px;
+    }
+
+    .section2-div2 {
+        margin-bottom: 80px;
+    }
+}
