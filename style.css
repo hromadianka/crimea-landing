@@ -244,11 +244,12 @@ button a {
 
 @media (max-width: 1000px) {
     .section3, .section1 {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .card {
         width: 100%;
+        box-sizing: border-box;
         margin-bottom: 20px;
         padding: 20px;
     }
