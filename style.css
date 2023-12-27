@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-p, h2 {
+p, h2, .card {
     color: #000;
     font-family: Didact Gothic;
     font-style: normal;
@@ -45,7 +45,7 @@ button a {
 
 @media (min-width: 1000px) {
 
-    p {
+    p, .card {
         font-size: 26px;
     }
 
@@ -132,7 +132,7 @@ button a {
 
 @media (max-width: 1000px) {
 
-    p {
+    p, .card {
         font-size: 16px;
     }
 
@@ -207,4 +207,40 @@ button a {
     .section2-div2 {
         margin-bottom: 80px;
     }
+}
+
+@media (min-width: 1000px) {
+    .section3 {
+        padding: 50px 100px;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(100% / 3 - 90px);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section3 {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+.card {
+    background-color: #C90000;
+    color: white;
+    border-radius: 15px;
 }
