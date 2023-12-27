@@ -210,6 +210,15 @@ button a {
 @media (min-width: 1000px) {
     .section3 {
         padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 p {
+        gap: 30px;
+        text-align: center;
     }
 
     .cards {
