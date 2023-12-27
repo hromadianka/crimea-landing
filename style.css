@@ -11,26 +11,36 @@ p {
 }
 
 button {
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button a {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .red-button {
-    color: white;
     background: #C90000;
     border: 1px solid #C90000;
 }
 
 .white-button {
-    color: black;
     background: white;
     border: 1px solid black;
+}
+
+.red-button a {
+    color: white;
+}
+
+.white-button a {
+    color: black;
 }
 
 @media (min-width: 1000px) {
