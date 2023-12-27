@@ -43,8 +43,12 @@ button a {
 
 @media (min-width: 1000px) {
 
-    p, .card {
+    p {
         font-size: 26px;
+    }
+
+    .card {
+        font-size: 21px;
     }
 
     h2 {
@@ -130,12 +134,16 @@ button a {
 
 @media (max-width: 1000px) {
 
-    p, .card {
-        font-size: 16px;
+    p {
+        font-size: 35px;
+    }
+
+    .card {
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 50px;
     }
 
     button {
@@ -214,10 +222,10 @@ button a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 35px;
     }
 
     .section3 p {
-        gap: 30px;
         text-align: center;
     }
 
@@ -225,19 +233,19 @@ button a {
         width: 100%;
         display: flex;
         gap: 30px;
+        justify-content: center;
     }
 
     .card {
         width: calc(100% / 3 - 90px);
         padding: 15px;
-        box
     }
 }
 
 @media (max-width: 1000px) {
-    .section3 {
-        margin-left: 1%;
-        margin-right: 1%;
+    .section3, .section1 {
+        margin-left: 2%;
+        margin-right: 2%;
     }
     .card {
         width: 100%;
